@@ -1,4 +1,53 @@
+header, footer{
+    height: 10vh;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: 30px 0 30px 0;
+}
+
 .navbar-brand img{
     width: 50px;
     margin-left: 25px;
+}
+
+.container-table100 {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+}
+
+table, th, tr, td{
+    border: 3px solid lightblue;
+    padding: 15px;
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: rgba(4, 155, 255, 0.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+i:hover{
+    filter: grayscale(100%);
 }
