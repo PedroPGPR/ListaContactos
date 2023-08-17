@@ -23,7 +23,7 @@
     switch($rotas[0]){
         
         case "":
-            require_once("models/home_model.php");
+            require_once("models/teste_model.php");
             break;
         case "home":
             require_once("models/home_model.php");
@@ -34,21 +34,12 @@
         case "editar":
             require_once("models/editar_model.php");
             break;
+        case "criar":
+            require_once("models/criar_model.php");
+            break;
         default:
             require_once("models/404_model.php");
             break;
     }
     
-?>
-
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Contactos</title>
-</head>
-<body>
-    
-</body>
-</html>
+?>       
