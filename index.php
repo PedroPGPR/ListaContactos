@@ -37,6 +37,9 @@
         case "criar":
             require_once("models/criar_model.php");
             break;
+        case "apagar":
+            require_once("models/teste_model.php");
+            break;
         default:
             require_once("models/404_model.php");
             break;

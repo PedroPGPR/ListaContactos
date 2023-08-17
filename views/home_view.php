@@ -8,7 +8,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Irá apagar o contacto X | Esta ação é permanente e não revertivel
+                    Irá apagar o contacto com o ID ( <?= $rotas[1]; ?> ) | Esta ação é permanente e não revertivel
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -42,7 +42,7 @@
                                 <a href="#">
                                     <i class="fa-regular fa-pen-to-square m-1" style="color: #004cff;"></i>
                                 </a>
-                                <a href="#">
+                                <a href="<?= ($url_base . $c['id']); ?>">
                                     <!-- Button trigger modal -->
                                     <i class="fa-solid fa-trash-can m-1" style="color: #ff0000;" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                                 </a>
