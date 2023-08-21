@@ -48,6 +48,12 @@ a{
     text-decoration: none;
 }
 
+i{
+    transition: 0.5s;
+}
+
 i:hover{
+    font-size: 20px;
     filter: grayscale(100%);
+    cursor: pointer;
 }

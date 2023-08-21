@@ -20,7 +20,25 @@
                             <td>
                                 <i class="fa-regular fa-eye m-1" style="color: #1eff00;"></i>
                                 <i class="fa-regular fa-pen-to-square m-1" style="color: #004cff;"></i>
-                                <i class="fa-solid fa-trash-can m-1" style="color: #ff0000;"></i>
+                                <i data-bs-toggle="modal" data-bs-target="#exampleModal<?= $c['id']; ?>" class="fa-solid fa-trash-can m-1" style="color: #ff0000;"></i>
+                                <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="exampleModal<?= $c['id']; ?>">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Tem a certeza?</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Está prestes a apagar o contacto <span style="font-weight: bold;">[<?= $c['name']; ?>]</span></p>
+                                                <p>Esta ação não é revertivel.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                <a href="<?= $url_base; ?>apagar/<?= $c['id']; ?>" type="button" class="btn btn-danger">Confirmar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>
