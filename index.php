@@ -23,7 +23,7 @@
     switch($rotas[0]){
         
         case "":
-            require_once("models/teste_model.php");
+            require_once("models/home_model.php");
             break;
         case "home":
             require_once("models/home_model.php");
