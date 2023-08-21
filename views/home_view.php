@@ -18,8 +18,12 @@
                             <td><?= $c['phone']; ?></td>
                             <td><?= $c['email']; ?></td>
                             <td>
-                                <i class="fa-regular fa-eye m-1" style="color: #1eff00;"></i>
-                                <i class="fa-regular fa-pen-to-square m-1" style="color: #004cff;"></i>
+                                <a href="<?= $url_base ?>ver">
+                                    <i class="fa-regular fa-eye m-1" style="color: #1eff00;"></i>
+                                </a>
+                                <a href="<?= $url_base ?>editar\<?= $c['id']; ?>">
+                                    <i class="fa-regular fa-pen-to-square m-1" style="color: #004cff;"></i>
+                                </a>
                                 <i data-bs-toggle="modal" data-bs-target="#exampleModal<?= $c['id']; ?>" class="fa-solid fa-trash-can m-1" style="color: #ff0000;"></i>
                                 <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="exampleModal<?= $c['id']; ?>">
                                     <div class="modal-dialog">

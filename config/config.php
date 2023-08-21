@@ -1,7 +1,7 @@
 <?php
 
     // Url Base
-    $url_base = "http://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI'] . '?') . '/';
+    $url_base = "http://localhost/ListaContactos" . '/';
 
     // Ligar DataBase
     $host = "localhost";
