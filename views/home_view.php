@@ -18,7 +18,7 @@
                             <td><?= $c['phone']; ?></td>
                             <td><?= $c['email']; ?></td>
                             <td>
-                                <a href="<?= $url_base ?>ver">
+                                <a href="<?= $url_base ?>ver\<?= $c['id']; ?>">
                                     <i class="fa-regular fa-eye m-1" style="color: #1eff00;"></i>
                                 </a>
                                 <a href="<?= $url_base ?>editar\<?= $c['id']; ?>">
